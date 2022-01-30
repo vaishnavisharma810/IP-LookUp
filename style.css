@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+    background-image: url('bg.webp');
+    font-family: 'Zen Kurenaido', sans-serif;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+
+h1{
+    text-align: center;
+    margin: 8px;
+    font-family: 'Handlee', cursive;
+    color: rgb(75, 62, 4);
+}
+
+.loader-container{
+    display: none;
+}
+
+.loader{
+    width: 10px;
+    height: 30px;
+    background-color: antiquewhite;
+    margin: 5px;
+   
+}
+
+.loader1{
+    animation: loading 1s ease-in-out infinite alternate;
+}
+
+.loader2{
+    animation: loading 1s ease-in-out infinite alternate 0.5s;
+}
+
+.loader3{
+    animation: loading 1s ease-in-out infinite alternate 1s;
+}
+
+.main-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details{
+    text-align: center;
+}
+
+.ip-display, .loc-display, .geo-display{
+    font-size: calc(1.5rem + 1vw);
+    color: rgb(247, 147, 16);
+    margin: 12px;
+}
+
+.btn{
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 25px;
+    transition: opacity 250ms linear;
+    margin: 12px;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@keyframes loading{
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
