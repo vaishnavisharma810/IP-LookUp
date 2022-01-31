@@ -7,6 +7,7 @@
 body{
     background-color: blueviolet;
     background-image: url('bg.webp');
+    background-repeat: none;
     font-family: 'Zen Kurenaido', sans-serif;
     overflow: hidden;
     font-size: 1.5rem;
@@ -61,7 +62,7 @@ h1{
     margin: 12px;
 }
 
-.btn{
+.btn, .clear{
     border: none;
     background-color: gray;
     color: white;
@@ -74,6 +75,11 @@ h1{
 }
 
 .btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.clear:hover{
     opacity: 0.8;
     cursor: pointer;
 }
